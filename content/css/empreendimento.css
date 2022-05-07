@@ -1,0 +1,359 @@
+section.banner-interna {
+    height: 645px;
+    margin-bottom: 55px;
+}
+
+.banner-mode {
+    padding: 0 !important;
+}
+
+.banner-mode:before {
+    background: url(../img/banner-mode.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    width: 100%;
+    height: 690px;
+    content: "";
+    z-index: -1;
+    position: absolute;
+}
+
+.banner-interna img {
+    z-index: -2;
+    position: relative;
+    height: 630px;
+    width: 96%;
+    object-fit: cover;
+}
+
+
+/***/
+
+.banner-interna-texto {
+    padding-top: 150px;
+}
+
+.banner-interna-texto .valor {
+    font-size: 16px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-left: -65px;
+    line-height: 40px;
+    margin-bottom: 24px;
+}
+
+.banner-interna-texto .valor b {
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.banner-interna-texto .informacoes {
+    padding: 0;
+    height: 58px;
+    margin-left: 0;
+    margin-bottom: 45px;
+}
+
+.banner-interna-texto .informacoes li {
+    list-style: none;
+    float: left;
+    width: 200px;
+    padding: 10px 0;
+}
+
+.banner-interna-texto .informacoes a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+.banner-interna-texto .informacoes a:hover {
+    color: #f47332;
+}
+
+.banner-interna-texto .informacoes i {
+    width: 55px;
+    height: 55px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+    margin-top: -7px;
+}
+
+.banner-interna-texto .informacoes i.icon-agende {
+    background-image: url("../img/icon-agende.png");
+}
+
+.banner-interna-texto .informacoes i.icon-compre-chat {
+    background-image: url("../img/icon-compre-chat.png");
+}
+
+.banner-interna .descricao-empreendimento {
+    padding: 0;
+    height: 90px;
+    width: 412px;
+}
+
+.banner-interna .descricao-empreendimento li {
+    list-style: none;
+    float: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+    margin-right: 50px;
+    margin-bottom: 15px;
+}
+
+.banner-interna .descricao-empreendimento li i {
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.banner-interna .descricao-empreendimento li i.icon-metragem {
+    background-image: url("../img/icon-metragem.png");
+}
+
+.banner-interna .descricao-empreendimento li i.icon-opcoes {
+    background-image: url("../img/icon-opcoes.png");
+}
+
+.banner-interna .descricao-empreendimento li i.icon-vagas {
+    background-image: url("../img/icon-vagas.png");
+}
+
+.banner-interna .valor-metragem {
+    font-size: 20px;
+    color: white;
+    background: #f47332;
+    display: block;
+    text-align: center;
+    padding: 0;
+    border-radius: 30px;
+    font-weight: 500;
+    width: 200px;
+}
+
+
+/****/
+
+.bg-informacoes-empreendimento {
+    padding: 0px 10% 60px 10%;
+}
+
+.bg-informacoes-empreendimento h1 {
+    font-size: 38px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.bg-informacoes-empreendimento h2 {
+    font-size: 13px;
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.bg-informacoes-empreendimento p {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 70px;
+}
+
+.bg-informacoes-empreendimento p i {
+    width: 19px;
+    height: 30px;
+    float: left;
+    background: url("../img/icon-localizacao.png") center no-repeat;
+    margin: -5px 15px 0 0;
+}
+
+.informacoes-empreendimento-nav {
+    padding: 0;
+    width: 115px;
+    border: none !important;
+}
+
+.informacoes-empreendimento-nav li {
+    background: #f47332;
+    margin-bottom: 11px !important;
+    width: 100%;
+    border-radius: 8px;
+    height: 32px;
+}
+
+.informacoes-empreendimento-nav li.tamanho-font a {
+    font-size: 11px;
+    line-height: 11px !important;
+    padding: 4px 0 !important;
+}
+
+.informacoes-empreendimento-nav li.active {
+    background: black;
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.informacoes-empreendimento-nav li.active a {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.informacoes-empreendimento-nav li a {
+    font-size: 15px;
+    color: white !important;
+    font-weight: 600;
+    padding: 0 9px !important;
+    line-height: 31px !important;
+}
+
+.informacoes-empreendimento-nav li a i {
+    width: 31px;
+    height: 31px;
+    float: left;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 4px;
+}
+
+.informacoes-empreendimento-nav li a i.icon-fotos-nav {
+    background-image: url("../img/icon-fotos-nav.png");
+}
+
+.informacoes-empreendimento-nav li a i.icon-mapa-nav {
+    background-image: url("../img/icon-mapa-nav.png");
+}
+
+.informacoes-empreendimento-nav li a i.icon-plantas-nav {
+    background-image: url("../img/icon-plantas-nav.png");
+}
+
+.informacoes-empreendimento-nav li a i.icon-tour-nav {
+    background-image: url("../img/icon-tour-nav.png");
+    margin: -4px 6px 0 12px;
+}
+
+.informacoes-empreendimento-texto {
+    width: 759px;
+    margin: -174px 0 0 0;
+    padding-left: 180px;
+}
+
+.informacoes-empreendimento-texto h4 {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.informacoes-empreendimento-texto p {
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.informacoes-empreendimento-texto p b {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+
+.informacoes-empreendimento-nav-resultado #plantas p {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 25px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.informacoes-empreendimento-nav-resultado #plantas img {
+    margin: 0 auto;
+    display: block;
+}
+
+.informacoes-empreendimento-nav-resultado #plantas a p {
+    text-decoration: none;
+}
+
+.informacoes-empreendimento-nav-resultado #mapa iframe {
+    border-radius: 20px;
+}
+
+.informacoes-empreendimento-nav-resultado #fotos img {
+    border-radius: 15px;
+    height: 246px;
+    margin: 0 auto;
+}
+
+.carousel-fotos .slick-prev,
+.carousel-fotos .slick-next {
+    background: url("../img/icon-arrow.png");
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 38px;
+    display: block;
+}
+
+.carousel-fotos .slick-prev {
+    left: -50px;
+    transform: rotate(180deg);
+    margin-top: -20px;
+}
+
+.carousel-fotos .slick-next {
+    right: -50px;
+}
+
+.carousel-fotos .slick-prev:before,
+.carousel-fotos .slick-next:before {
+    display: none;
+}
+
+.carousel-fotos .slick-prev:hover,
+.carousel-fotos .slick-next:hover {
+    background: url(../img/icon-arrow.png) no-repeat;
+    opacity: 0.2;
+}
+
+.carousel-fotos .slick-prev:focus,
+.carousel-fotos .slick-next:focus {
+    background: url(../img/icon-arrow.png) no-repeat;
+}
+
+.carousel-fotos .slick-dots li button:before {
+    content: "" !important;
+}
+
+.carousel-fotos .slick-dots li {
+    width: 14px;
+    height: 14px;
+    background: #d1cdcd;
+    border-radius: 100px;
+}
+
+.carousel-fotos .slick-dots li.slick-active {
+    background: #f47332;
+}
+
+.carousel-fotos .slick-dots {
+    bottom: -50px;
+}
