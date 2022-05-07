@@ -357,3 +357,114 @@ section.banner-interna {
 .carousel-fotos .slick-dots {
     bottom: -50px;
 }
+
+.bg-caracteristicas-empreendimento {
+    padding: 0px 10% 0px 10%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.bg-caracteristicas-empreendimento h2 {
+    font-size: 35px;
+    text-align: left;
+    color: #5f5f5e;
+    letter-spacing: 3px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.bg-caracteristicas-empreendimento h2 b {
+    color: black;
+    font-weight: 600;
+}
+
+.bg-caracteristicas-empreendimento h2:after {
+    content: "";
+    width: 30%;
+    height: 4px;
+    background: #f47332;
+    display: block;
+    border-radius: 10px;
+    margin-top: 9px;
+    margin-left: 0;
+    float: left;
+    position: absolute;
+}
+
+.bg-caracteristicas-empreendimento p {
+    font-size: 28px;
+    color: #303030;
+    margin-bottom: 45px;
+}
+
+.bg-caracteristicas-empreendimento i.icon-correto {
+    background: url("../img/icon-correto.png") center no-repeat;
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: -4px 17px 0 0px;
+}
+
+.bg-caracteristicas-empreendimento h3 {
+    font-size: 35px;
+    text-align: left;
+    color: #192e5a;
+    letter-spacing: 3px;
+    margin-bottom: 45px;
+    position: relative;
+}
+
+.fotos-lazer-completo img {
+    z-index: -2;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    object-fit: cover;
+    width: 75%;
+    border-radius: 35px;
+    margin-bottom: 20px;
+    transform: skewX(12deg);
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 0 5px 22px rgb(50 50 50 / 57%);
+}
+
+.fotos-lazer-completo p {
+    font-size: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.bg-valores-financiamento {
+    padding: 50px 10% 50px 10%;
+    position: relative;
+    margin-bottom: 30px;
+    background: #252525;
+}
+
+.bg-valores-financiamento h2 {
+    font-size: 35px;
+    text-align: left;
+    color: #5f5f5e;
+    letter-spacing: 3px;
+    margin-bottom: 65px;
+    position: relative;
+}
+
+.bg-valores-financiamento h2 b {
+    color: white;
+    font-weight: 600;
+}
+
+.bg-valores-financiamento h2:after {
+    content: "";
+    width: 30%;
+    height: 4px;
+    background: #f47332;
+    display: block;
+    border-radius: 10px;
+    margin-top: 9px;
+    margin-left: 0;
+    float: left;
+    position: absolute;
+}
