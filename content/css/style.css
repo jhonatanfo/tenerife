@@ -27,13 +27,14 @@ header {
 }
 
 header .portal-cliente {
-    width: 25%;
+    width: 323px;
     height: 87px;
     background-color: #f47332;
     border-radius: 100px;
     padding: 1px 39px;
     margin: 0;
-    float: left;
+    position: absolute;
+    left: 0;
 }
 
 header .portal-cliente h2 {
@@ -75,22 +76,33 @@ header .portal-cliente button {
     padding: 0;
 }
 
-header .logo i {
+header a.logo {
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 87px;
+}
+
+header a.logo i {
     background-image: url('../img/logo.png');
     background-repeat: no-repeat;
     background-position: center;
-    width: 22%;
+    background-size: 100%;
     height: 87px;
-    float: left;
-    margin: 0 135px 0 135px;
+    display: block;
 }
 
 header .redes-sociais {
-    padding: 0;
-    width: 6.5%;
-    height: 38px;
-    float: left;
-    margin: 19px 80px 19px 50px;
+    width: 97px;
+    height: 86px;
+    padding: 20px 0;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: 22%;
 }
 
 header .redes-sociais:after {
@@ -129,10 +141,11 @@ header .redes-sociais li i.icon-facebook {
 }
 
 header .menu-box {
-    width: 7%;
+    width: 110px;
     height: 39px;
-    float: right;
     margin: 24px 0;
+    position: absolute;
+    right: 0;
 }
 
 header .menu-box .menu-icon i {
@@ -185,11 +198,11 @@ header nav .nav li a .icon-fale-conosco {
 }
 
 .banner-home {
-    background: url("../img/banner-home.jpg");
-    background-position: center -42px;
+    background: url("../img/banner-home.jpg") no-repeat;
+    background-position: center bottom;
     background-size: cover;
     width: 100%;
-    height: 600px;
+    height: 485px;
 }
 
 
@@ -298,7 +311,6 @@ header nav .nav li a .icon-fale-conosco {
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    height: 23px;
     margin-bottom: 55px;
 }
 
@@ -489,7 +501,7 @@ header nav .nav li a .icon-fale-conosco {
 
 footer {
     background: #252525;
-    padding: 60px 10% 60px 10%;
+    padding: 60px 7% 60px 7%;
     border-bottom: 70px solid black;
     height: 385px;
 }
@@ -587,7 +599,7 @@ footer .info-rodape {
 }
 
 footer .info-rodape img {
-    width: 289px;
+    width: 100%;
     margin-bottom: 25px;
 }
 
@@ -657,4 +669,9 @@ footer .info-rodape ul.footer-redes-sociais li i.icon-linkedin-footer {
 
 footer .info-rodape ul.footer-redes-sociais li i.icon-facebook-footer {
     background-image: url("../img/icon-facebook.png");
+}
+
+.login-mobile,
+.icon-close {
+    display: none !important;
 }

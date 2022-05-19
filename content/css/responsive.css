@@ -1,9 +1,239 @@
-@media (min-width: 1200px) and (max-width: 1400px) {}
-
-@media (min-width: 992px) and (max-width: 1199px) {}
-
-@media (min-width: 768px) and (max-width: 991px) {}
-
-@media (min-width: 0px) and (max-width: 767px) {}
-
-@media (min-width: 0px) and (max-width: 991px) {}
+    @media (min-width: 1401px) and (max-width: 1600px) {
+        .carousel-empreendimentos .box-banner .chamada-texto h2 {
+            font-size: 17px;
+        }
+    }
+    
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        header a.logo {
+            width: 243px;
+        }
+        .carousel-empreendimentos .box-banner .chamada-texto h2 {
+            font-size: 15px;
+        }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        header {
+            margin: 0 7%;
+        }
+        header a.logo {
+            width: 210px;
+        }
+        header .portal-cliente {
+            width: 294px;
+            padding: 1px 28px;
+        }
+        /**titulo**/
+        .bg-slide-empreendimentos h1 {
+            font-size: 24px;
+        }
+        .bg-slide-empreendimentos h1:after {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 9px;
+        }
+        .carousel-empreendimentos .box-banner .chamada-texto h2 {
+            font-size: 15px;
+        }
+        .carousel-empreendimentos .box-banner .btn-veja-mais {
+            font-size: 14px;
+        }
+        .btn-veja-mais {
+            font-size: 11px;
+            width: 145px;
+        }
+        /*****/
+        footer .info-rodape {
+            padding-left: 50px;
+        }
+    }
+    
+    @media (min-width: 768px) and (max-width: 991px) {
+        header {
+            margin: 0 4%;
+        }
+        header a.logo {
+            width: 189px;
+        }
+        header .portal-cliente {
+            width: 240px;
+            padding: 1px 13px 1px 24px;
+        }
+        header .portal-cliente input {
+            width: 95px;
+        }
+        header .portal-cliente button {
+            font-size: 8px;
+            width: 99px;
+        }
+        header .redes-sociais {
+            margin-left: 19%;
+        }
+        /*****/
+        footer .info-rodape {
+            padding-left: 35px;
+        }
+        footer {
+            padding: 60px 4% 60px 4%;
+        }
+        footer .info-rodape ul.footer-email-telefone li i {
+            width: 62px;
+        }
+    }
+    
+    @media (min-width: 0px) and (max-width: 767px) {
+        header {
+            margin: 0 4%;
+        }
+        header a.logo {
+            width: 150px;
+        }
+        header .portal-cliente {
+            width: 100%;
+            height: 283px;
+            border-radius: 30px;
+            padding: 63px 84px;
+            z-index: 1;
+        }
+        header .portal-cliente input {
+            width: 100%;
+            height: 32px;
+            margin: 8px 0 2px 0;
+            font-size: 12px;
+        }
+        header .portal-cliente button {
+            font-size: 13px;
+            width: 100%;
+            margin: 9px 0 0 0;
+        }
+        header .redes-sociais {
+            margin-left: 0;
+            left: 15px;
+            width: 60px;
+        }
+        header .redes-sociais li i {
+            width: 16px;
+            height: 22px;
+            background-size: 100%;
+        }
+        header .redes-sociais:after {
+            display: none;
+        }
+        header .redes-sociais li {
+            margin: 13px 2px;
+        }
+        header .menu-box {
+            width: 90px;
+        }
+        header .menu-box .menu-icon i {
+            width: 24px;
+        }
+        .login-mobile,
+        .icon-close {
+            display: block !important;
+        }
+        .portal-cliente {
+            display: none;
+        }
+        .portal-cliente.ativo {
+            display: block !important;
+        }
+        .icon-close {
+            background: url("../img/icon-close.png");
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background-size: 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 29px;
+            top: 21px;
+            cursor: pointer;
+        }
+        /**titulo**/
+        .banner-home {
+            height: 380px;
+        }
+        header nav .nav {
+            width: 300px;
+            margin: 29px 0 0px -284px;
+        }
+        .carousel-empreendimentos .slick-next {
+            right: 0;
+        }
+        .carousel-empreendimentos .slick-prev {
+            left: 0;
+            top: 47%;
+        }
+        footer {
+            height: auto;
+        }
+        footer .nav-rodape ul li a {
+            text-align: center;
+            margin: 0 auto;
+            display: block;
+        }
+        footer .form-rodape h2,
+        footer .form-rodape p {
+            text-align: center;
+        }
+        footer .form-rodape form label {
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 12px;
+        }
+        footer .form-rodape form button {
+            float: inherit;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 30px;
+        }
+        footer .info-rodape img {
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+        }
+        footer .nav-rodape ul {
+            margin-bottom: 35px;
+        }
+        footer .info-rodape {
+            padding-left: 0px;
+        }
+        footer .info-rodape ul.footer-email-telefone {
+            width: 215px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        footer .info-rodape ul.footer-email-telefone {
+            width: 215px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        footer .info-rodape ul.footer-redes-sociais {
+            width: 96px;
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+    }
+    
+    @media (min-width: 0px) and (max-width: 991px) {
+        .bg-slide-empreendimentos h1 {
+            font-size: 16px;
+        }
+        .bg-slide-empreendimentos h1:after {
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 9px;
+        }
+        .carousel-empreendimentos .box-banner .btn-veja-mais {
+            font-size: 14px;
+        }
+        .btn-veja-mais {
+            font-size: 11px;
+            width: 145px;
+        }
+    }
+    /* border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; */

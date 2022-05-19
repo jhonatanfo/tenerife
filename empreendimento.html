@@ -292,14 +292,169 @@
         <h2><b>Valores</b> Financiamento</h2>
 
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+                <div class="select-valores-financiamento">
+                    <h5>Valor Financiado:</h5>
+
+                    <div class="select-box">
+                        <div class="select-box__current" tabindex="1">
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                                <p class="select-box__input-text">
+                                    <img src="content/img/fotos-01.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                    <span>R$ 000.000,00</span>
+                                </p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
+                                <p class="select-box__input-text">
+                                    <img src="content/img/fotos-02.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                    <span>R$ 000.000,00</span>
+                                </p>
+                            </div>
+                            <div class="select-box__value">
+                                <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
+                                <p class="select-box__input-text">
+                                    <img src="content/img/fotos-03.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                    <span>R$ 000.000,00</span>
+                                </p>
+                            </div>
+
+                            <img class="select-box__icon" src="content/img/icon-arrow-select.png" alt="Arrow Icon" aria-hidden="true" />
+                        </div>
+                        <ul class="select-box__list">
+                            <li>
+                                <label class="select-box__option" for="0" aria-hidden="aria-hidden">
+                                    <img src="content/img/fotos-01.jpg" width="20px">
+                                    Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                    <span>R$ 000.000,00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="1" aria-hidden="aria-hidden">
+                                    <img src="content/img/fotos-02.jpg" width="20px">
+                                    Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                    <span>R$ 000.000,00</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="select-box__option" for="2" aria-hidden="aria-hidden">
+                                    <img src="content/img/fotos-03.jpg" width="20px">
+                                    Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                    <span>R$ 000.000,00</span>
+                                </label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="slide-range">
+                    <p>Parcela de entrada:</p>
+                    <span id="rangeValue">R$ 000.000,00</span>
+                    <Input class="range" type="range" min="0" max="1000000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                </div>
+
+                <div class="slide-range">
+                    <a href="">Confira seu saldo do FGTS</a>
+                    <p>Saldo do FGTS:</p>
+                    <span id="rangeValue">R$ 0,00</span>
+                    <Input class="range" type="range" min="0" max="1000000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                </div>
+
+                <ul class="btn-select-valores-financiamento">
+                    <li>
+                        <a href="">
+                            <i class="icon-calculo-renda"></i> calcular com base<br>na sua <b>renda</b>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="icon-calculo-parcelas"></i> calcular com base<br>em <b>parcelas</b>
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-md-6 info-select-valores-financiamento">
+                <h3>Impostos e taxas cartorais</h3>
+                <p>
+                    Abaixo disponibilizamos uma estimativa de despesas com emissão de contratos de financiamento, recolhimento de ITBI e registro junto ao Cartório de Registro de Imóveis.
+                </p>
+                <ul>
+                    <li>itbi + Registro </li>
+                    <li><i class="icon-info"></i></li>
+                    <li><span></span></li>
+                    <li>R$ 00.000,00</li>
+                </ul>
+                <ul>
+                    <li>Tarifas de emissão<br>de contrato</li>
+                    <li><i class="icon-info"></i></li>
+                    <li><span></span></li>
+                    <li>R$ 00.000,00</li>
+                </ul>
+                <a href="">ver sugestão de fluxo de parcelas</a>
+            </div>
         </div>
 
     </section>
 
+    <section class="bg-compre-imovel-seguranca">
+        <h3>Compre seu imóvel <b>com segurança</b></h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="arrow"></div>
+                <i class="icon-agende-visite"></i>
+                <h4>Agende uma visita</h4>
+                <p>Agende online sua visita ao imóvel ou solicite um contato para obter mais informações.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="arrow"></div>
+                <i class="icon-financie"></i>
+                <h4>Financie</h4>
+                <p>Iremos te auxiliar no financiamento do imóvel, temos acordos com as melhores instituições.</p>
+            </div>
+            <div class="col-md-4">
+                <i class="icon-prepare-mudanca"></i>
+                <h4>Prepare a Mudança</h4>
+                <p>Formalizamos o contrato, você pega as chaves e continuamos com você até a escritura.</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="bg-informacoes-tecnicas-imovel">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Informações Técnicas <b>do Imóvel</b></h3>
 
+                <h5>Números</h5>
+
+                <ul>
+                    <li><span>Área do terreno</span> 000 m²</li>
+                    <li><span>Torre</span> lorem ipsum</li>
+                    <li><span>Pavimentos</span> lorem ipsum</li>
+                    <li><span>Unidades por andar</span> lorem ipsum</li>
+                    <li><span>Área privativa</span> lorem ipsum</li>
+                    <li><span>Elevadores</span> lorem ipsum</li>
+                    <li><span>Vagas</span> lorem ipsum</li>
+                </ul>
+
+                <h5>Projetos</h5>
+
+                <ul>
+                    <li><span>Projeto Arquitetônico</span> 000 m²</li>
+                    <li><span>Torre</span> lorem ipsum</li>
+                    <li><span>Pavimentos</span> lorem ipsum</li>
+                    <li><span>Unidades por andar</span> lorem ipsum</li>
+                    <li><span>Área privativa</span> lorem ipsum</li>
+                    <li><span>Elevadores</span> lorem ipsum</li>
+                    <li><span>Vagas</span> lorem ipsum</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -377,8 +532,6 @@
             arrows: true,
         });
 
-
-
         $(document).on("scroll", function() {
             if ($(document).scrollTop() > 100) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
                 $(".navbar").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
@@ -396,6 +549,10 @@
             $('#lightgallerydois').lightGallery();
             $('#lightgallery3').lightGallery();
         });
+
+        function rangeSlide(value) {
+            document.getElementById('rangeValue').innerHTML = value;
+        }
     </script>
 
 </body>

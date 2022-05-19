@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tenerife - Empreendimentos Imobiliários</title>
 
-    <link rel="stylesheet" href="content/css/responsive.css">
     <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="content/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="content/slick/slick-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,6 +27,7 @@
     <header>
 
         <div class="portal-cliente">
+            <i class="icon-close"></i>
             <h2><i></i> Portal do Cliente</h2>
             <form>
                 <input type="text" placeholder="Login / CPF" name="" id="">
@@ -71,6 +72,7 @@
                 <li><a href="#">Portal do Cliente</a></li>
                 <li><a href="#">Venda seu Terreno</a></li>
                 <li><a href="#">Fale Conosco <i class="icon-fale-conosco"></i></a></li>
+                <li class="login-mobile"><a href="#">Login</a></li>
             </ul>
         </nav>
 
@@ -192,10 +194,12 @@
         </div>
 
         <a href="" class="btn-veja-mais">veja mais</a>
+
     </section>
 
+
     <footer>
-        <div class="col-md-4 nav-rodape">
+        <div class="col-md-4 col-sm-4 nav-rodape">
             <ul>
                 <li><a href="">home</a></li>
                 <li><a href="">a companhia</a></li>
@@ -206,7 +210,7 @@
                 <li><a href="">cadastro</a></li>
             </ul>
         </div>
-        <div class="col-md-4 form-rodape">
+        <div class="col-md-4 col-sm-4 form-rodape">
             <h2>ligamos para você</h2>
             <p>Solicitar contato</p>
             <form>
@@ -225,7 +229,7 @@
                 <button type="submit">ENVIAR</button>
             </form>
         </div>
-        <div class="col-md-4 info-rodape">
+        <div class="col-md-4 col-sm-4 info-rodape">
             <img src="content/img/logo.png">
             <ul class="footer-email-telefone">
                 <li><a href=""><i class="icon-email-footer"></i></a></li>
@@ -257,7 +261,21 @@
             arrows: true,
             centerMode: true,
             centerPadding: '0px',
-            focusOnSelect: true
+            focusOnSelect: true,
+            responsive: [{
+
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            }, {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
         });
 
         $('.nav li a[href^="#"], .right a[href^="#"] .menu-rodape li a[href^="#"]').on('click', function(e) {
@@ -270,16 +288,18 @@
             }, 500);
         });
 
-        $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 100) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
-                $(".navbar").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
-            } else {
-                $(".navbar").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
-            }
-        });
 
         $(".menu-icon").click(function() {
             $(".nav").toggleClass("ativo");
+        });
+
+        $(".login-mobile").click(function() {
+            $(".portal-cliente").toggleClass("ativo");
+            $(".nav").toggleClass("ativo");
+        });
+
+        $(".icon-close").click(function() {
+            $(".portal-cliente").removeClass("ativo");
         });
     </script>
 
