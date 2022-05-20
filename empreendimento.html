@@ -8,14 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Tenerife - Empreendimentos Imobiliários</title>
 
-    <link rel="stylesheet" href="content/css/responsive.css">
     <link rel="stylesheet" href="content/css/style.css">
     <link rel="stylesheet" href="content/css/empreendimento.css">
+    <link rel="stylesheet" href="content/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="content/slick/slick.css">
     <link rel="stylesheet" type="text/css" href="content/slick/slick-theme.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <link href="content/dist/css/lightgallery.css" rel="stylesheet">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -23,6 +21,8 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <link href="content/dist/css/lightgallery.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 </head>
 
 <body>
@@ -30,6 +30,7 @@
     <header>
 
         <div class="portal-cliente">
+            <i class="icon-close"></i>
             <h2><i></i> Portal do Cliente</h2>
             <form>
                 <input type="text" placeholder="Login / CPF" name="" id="">
@@ -74,16 +75,17 @@
                 <li><a href="#">Portal do Cliente</a></li>
                 <li><a href="#">Venda seu Terreno</a></li>
                 <li><a href="#">Fale Conosco <i class="icon-fale-conosco"></i></a></li>
+                <li class="login-mobile"><a href="#">Login</a></li>
             </ul>
         </nav>
 
     </header>
 
     <section class="banner-interna">
-        <div class="col-md-7 banner-mode">
+        <div class="col-md-7 col-sm-7 banner-mode">
             <img src="content/img/empreendimento.jpg">
         </div>
-        <div class="col-md-5 banner-interna-texto">
+        <div class="col-md-5 col-sm-5 banner-interna-texto">
             <p class="valor">
                 a partir de<br> R$ <b>0.000.000,00</b>
             </p>
@@ -145,20 +147,20 @@
 
         <div class="tab-content informacoes-empreendimento-nav-resultado row">
             <div id="fotos" class="tab-pane fade in active">
-                <ul class="carousel-fotos list-unstyled" id="lightgallery">
-                    <li data-src="content/img/fotos-01.jpg">
-                        <img src="content/img/fotos-01.jpg" class="">
-                    </li>
-                    <li data-src="content/img/fotos-02.jpg">
-                        <img src="content/img/fotos-02.jpg" class="">
-                    </li>
-                    <li data-src="content/img/fotos-03.jpg">
-                        <img src="content/img/fotos-03.jpg" class="">
-                    </li>
-                    <li data-src="content/img/fotos-01.jpg">
-                        <img src="content/img/fotos-01.jpg" class="">
-                    </li>
-                </ul>
+                <div class="carousel-fotos list-unstyled ">
+                    <a href="content/img/fotos-01.jpg" class="lightgallery">
+                        <img src="content/img/fotos-01.jpg">
+                    </a>
+                    <a href="content/img/fotos-02.jpg" class="lightgallery">
+                        <img src="content/img/fotos-02.jpg">
+                    </a>
+                    <a href="content/img/fotos-03.jpg" class="lightgallery">
+                        <img src="content/img/fotos-03.jpg">
+                    </a>
+                    <a href="content/img/fotos-01.jpg" class="lightgallery">
+                        <img src="content/img/fotos-01.jpg">
+                    </a>
+                </div>
             </div>
             <div id="mapa" class="tab-pane fade">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.886253397441!2d-46.595263285021986!3d-23.572528384677376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5c000ea1bfc7%3A0x17a9b2c52d224f23!2sR.%20Vicente%20Romano%2C%20168%20-%20Parque%20da%20Mooca%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003124-050!5e0!3m2!1spt-PT!2sbr!4v1651885674797!5m2!1spt-PT!2sbr"
@@ -167,25 +169,25 @@
             <div id="plantas" class="tab-pane fade">
                 <div class="list-unstyled" id="lightgallerydois">
 
-                    <div class="col-md-3" data-src="content/img/planta-01.png">
+                    <div class="col-xs-12 col-sm-6 col-md-3" data-src="content/img/planta-01.png">
                         <a href="#" class="slide-fotos-img">
                             <p>00m² - 1 suíte</p>
                             <img src="content/img/planta-01.png" class="">
                         </a>
                     </div>
-                    <div class="col-md-3" data-src="content/img/planta-02.png">
+                    <div class="col-xs-12 col-sm-6 col-md-3" data-src="content/img/planta-02.png">
                         <a href="#" class="slide-fotos-img">
                             <p>00m² - 1 suíte</p>
                             <img src="content/img/planta-02.png" class="">
                         </a>
                     </div>
-                    <div class="col-md-3" data-src="content/img/planta-03.png">
+                    <div class="col-xs-12 col-sm-6 col-md-3" data-src="content/img/planta-03.png">
                         <a href="#" class="slide-fotos-img">
                             <p>00m² - 1 suíte</p>
                             <img src="content/img/planta-03.png" class="">
                         </a>
                     </div>
-                    <div class="col-md-3" data-src="content/img/planta-04.png">
+                    <div class="col-xs-12 col-sm-6 col-md-3" data-src="content/img/planta-04.png">
                         <a href="#" class="slide-fotos-img">
                             <p>00m² - 1 suíte</p>
                             <img src="content/img/planta-04.png" class="">
@@ -198,8 +200,6 @@
             </div>
         </div>
 
-
-
     </section>
 
     <section class="bg-caracteristicas-empreendimento">
@@ -208,12 +208,12 @@
         <h3>Segurança</h3>
 
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-xs-12 col-sm-6 col-md-6">
                 <p><i class="icon-correto"></i> Lorem Ipsum</p>
                 <p><i class="icon-correto"></i> Lorem Ipsum</p>
                 <p><i class="icon-correto"></i> Lorem Ipsum</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-xs-12 col-sm-6 col-md-6">
                 <p><i class="icon-correto"></i> Lorem Ipsum</p>
                 <p><i class="icon-correto"></i> Lorem Ipsum</p>
                 <p><i class="icon-correto"></i> Lorem Ipsum</p>
@@ -272,15 +272,15 @@
         <h3>Bem-estar e saúde</h3>
 
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
                 <p><i class="icon-correto"></i> Fitness</p>
                 <p><i class="icon-correto"></i> Yoga studio</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
                 <p><i class="icon-correto"></i> Meditação</p>
                 <p><i class="icon-correto"></i> Área de descanso</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-xs-12 col-sm-6 col-md-4">
                 <p><i class="icon-correto"></i> Yoga studio</p>
             </div>
         </div>
@@ -401,6 +401,8 @@
 
     </section>
 
+
+
     <section class="bg-compre-imovel-seguranca">
         <h3>Compre seu imóvel <b>com segurança</b></h3>
         <div class="row">
@@ -458,6 +460,7 @@
 
 
 
+
     <footer>
         <div class="col-md-4 nav-rodape">
             <ul>
@@ -503,7 +506,6 @@
         </div>
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
 
     <!-- Latest compiled and minified JavaScript -->
@@ -515,21 +517,25 @@
     <script>
         AOS.init();
 
-        $(".carousel-empreendimentos").slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: false,
-            arrows: true,
-            centerMode: true,
-            centerPadding: '0px',
-            focusOnSelect: true
-        });
 
         $(".carousel-fotos").slick({
             slidesToShow: 3,
             slidesToScroll: 1,
             dots: true,
             arrows: true,
+            responsive: [{
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 580,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
         });
 
         $(document).on("scroll", function() {
@@ -544,8 +550,12 @@
             $(".nav").toggleClass("ativo");
         });
 
+
+        $('.carousel-fotos').lightGallery({
+            selector: '.slick-slide:not(.slick-cloned) .lightgallery',
+        });
+
         $(document).ready(function() {
-            $('#lightgallery').lightGallery();
             $('#lightgallerydois').lightGallery();
             $('#lightgallery3').lightGallery();
         });

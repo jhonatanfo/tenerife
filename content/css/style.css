@@ -202,7 +202,7 @@ header nav .nav li a .icon-fale-conosco {
     background-position: center bottom;
     background-size: cover;
     width: 100%;
-    height: 485px;
+    height: 670px;
 }
 
 
@@ -599,7 +599,7 @@ footer .info-rodape {
 }
 
 footer .info-rodape img {
-    width: 100%;
+    width: 250px;
     margin-bottom: 25px;
 }
 
