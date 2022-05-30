@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
 
@@ -9,6 +9,7 @@
     <title>Tenerife - Empreendimentos Imobiliários</title>
 
     <link rel="stylesheet" href="content/css/style.css">
+    <link rel="stylesheet" href="content/css/range.css">
     <link rel="stylesheet" href="content/css/empreendimento.css">
     <link rel="stylesheet" href="content/css/responsive.css">
     <link rel="stylesheet" type="text/css" href="content/slick/slick.css">
@@ -293,115 +294,125 @@
 
         <div class="row">
             <div class="col-md-6">
-                <div class="select-valores-financiamento">
-                    <h5>Valor Financiado:</h5>
-
-                    <div class="select-box">
-                        <div class="select-box__current" tabindex="1">
-                            <div class="select-box__value">
-                                <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
-                                <p class="select-box__input-text">
-                                    <img src="content/img/fotos-01.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
-                                    <span>R$ 000.000,00</span>
-                                </p>
+                <div class="box-valores-financiamento-left">
+                    <div class="select-valores-financiamento">
+                        <h5>Valor Financiado:</h5>
+                        <div class="select-box">
+                            <div class="select-box__current" tabindex="1">
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="0" value="1" name="Ben" checked="checked" />
+                                    <p class="select-box__input-text">
+                                        <img src="content/img/fotos-01.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                        <span>R$ 000.000,00</span>
+                                    </p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
+                                    <p class="select-box__input-text">
+                                        <img src="content/img/fotos-02.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                        <span>R$ 000.000,00</span>
+                                    </p>
+                                </div>
+                                <div class="select-box__value">
+                                    <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
+                                    <p class="select-box__input-text">
+                                        <img src="content/img/fotos-03.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
+                                        <span>R$ 000.000,00</span>
+                                    </p>
+                                </div>
+                                <img class="select-box__icon" src="content/img/icon-arrow-select.png" alt="Arrow Icon" aria-hidden="true" />
                             </div>
-                            <div class="select-box__value">
-                                <input class="select-box__input" type="radio" id="1" value="2" name="Ben" />
-                                <p class="select-box__input-text">
-                                    <img src="content/img/fotos-02.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
-                                    <span>R$ 000.000,00</span>
-                                </p>
-                            </div>
-                            <div class="select-box__value">
-                                <input class="select-box__input" type="radio" id="2" value="3" name="Ben" />
-                                <p class="select-box__input-text">
-                                    <img src="content/img/fotos-03.jpg" width="20px"> Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
-                                    <span>R$ 000.000,00</span>
-                                </p>
-                            </div>
-
-                            <img class="select-box__icon" src="content/img/icon-arrow-select.png" alt="Arrow Icon" aria-hidden="true" />
-                        </div>
-                        <ul class="select-box__list">
-                            <li>
-                                <label class="select-box__option" for="0" aria-hidden="aria-hidden">
+                            <ul class="select-box__list">
+                                <li>
+                                    <label class="select-box__option" for="0" aria-hidden="aria-hidden">
                                     <img src="content/img/fotos-01.jpg" width="20px">
                                     Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
                                     <span>R$ 000.000,00</span>
                                 </label>
-                            </li>
-                            <li>
-                                <label class="select-box__option" for="1" aria-hidden="aria-hidden">
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="1" aria-hidden="aria-hidden">
                                     <img src="content/img/fotos-02.jpg" width="20px">
                                     Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
                                     <span>R$ 000.000,00</span>
                                 </label>
-                            </li>
-                            <li>
-                                <label class="select-box__option" for="2" aria-hidden="aria-hidden">
+                                </li>
+                                <li>
+                                    <label class="select-box__option" for="2" aria-hidden="aria-hidden">
                                     <img src="content/img/fotos-03.jpg" width="20px">
                                     Massimo Parque da Mooca - 0 dorms ( 00,00m² )<br>
                                     <span>R$ 000.000,00</span>
                                 </label>
-                            </li>
+                                </li>
 
-                        </ul>
+                            </ul>
+                        </div>
                     </div>
+
+                    <form class="range">
+
+                        <div class="slider">
+                            <div class="form-group range__value range__value--first">
+                                <h5>Parcela de entrada:</h5>
+                                <span></span>
+                            </div>
+                            <div class="form-group range__slider range__slider--first">
+                                <input type="range" step="0">
+                            </div>
+                        </div>
+
+                        <div class="slider">
+                            <div class="form-group range__value range__value--second">
+                                <h5>Saldo do FGTS:</h5>
+                                <span></span>
+                            </div>
+                            <div class="form-group range__slider range__slider--second">
+                                <input type="range" step="0">
+                            </div>
+
+                        </div>
+                    </form>
+
+
+
+                    <ul class="btn-select-valores-financiamento">
+                        <li>
+                            <a href="">
+                                <i class="icon-calculo-renda"></i> calcular com base<br>na sua <b>renda</b>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="icon-calculo-parcelas"></i> calcular com base<br>em <b>parcelas</b>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
-
-                <div class="slide-range">
-                    <p>Parcela de entrada:</p>
-                    <span id="rangeValue">R$ 000.000,00</span>
-                    <Input class="range" type="range" min="0" max="1000000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-                </div>
-
-                <div class="slide-range">
-                    <a href="">Confira seu saldo do FGTS</a>
-                    <p>Saldo do FGTS:</p>
-                    <span id="rangeValue">R$ 0,00</span>
-                    <Input class="range" type="range" min="0" max="1000000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
-                </div>
-
-                <ul class="btn-select-valores-financiamento">
-                    <li>
-                        <a href="">
-                            <i class="icon-calculo-renda"></i> calcular com base<br>na sua <b>renda</b>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="icon-calculo-parcelas"></i> calcular com base<br>em <b>parcelas</b>
-                        </a>
-                    </li>
-                </ul>
-
-
             </div>
             <div class="col-md-6 info-select-valores-financiamento">
-                <h3>Impostos e taxas cartorais</h3>
-                <p>
-                    Abaixo disponibilizamos uma estimativa de despesas com emissão de contratos de financiamento, recolhimento de ITBI e registro junto ao Cartório de Registro de Imóveis.
-                </p>
-                <ul>
-                    <li>itbi + Registro </li>
-                    <li><i class="icon-info"></i></li>
-                    <li><span></span></li>
-                    <li>R$ 00.000,00</li>
-                </ul>
-                <ul>
-                    <li>Tarifas de emissão<br>de contrato</li>
-                    <li><i class="icon-info"></i></li>
-                    <li><span></span></li>
-                    <li>R$ 00.000,00</li>
-                </ul>
-                <a href="">ver sugestão de fluxo de parcelas</a>
+                <div class="box-valores-financiamento-right">
+                    <h3>Impostos e taxas cartorais</h3>
+                    <p>
+                        Abaixo disponibilizamos uma estimativa de despesas com emissão de contratos de financiamento, recolhimento de ITBI e registro junto ao Cartório de Registro de Imóveis.
+                    </p>
+                    <ul>
+                        <li>itbi + Registro </li>
+                        <li><i class="icon-info"></i></li>
+                        <li><span></span></li>
+                        <li>R$ 00.000,00</li>
+                    </ul>
+                    <ul>
+                        <li>Tarifas de emissão<br>de contrato</li>
+                        <li><i class="icon-info"></i></li>
+                        <li><span></span></li>
+                        <li>R$ 00.000,00</li>
+                    </ul>
+                    <a href="">ver sugestão de fluxo de parcelas</a>
+                </div>
             </div>
         </div>
 
     </section>
-
-
 
     <section class="bg-compre-imovel-seguranca">
         <h3>Compre seu imóvel <b>com segurança</b></h3>
@@ -458,9 +469,6 @@
         </div>
     </section>
 
-
-
-
     <footer>
         <div class="col-md-4 nav-rodape">
             <ul>
@@ -514,56 +522,10 @@
     <script src="content/slick/slick.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="content/dist/js/lightgallery-all.min.js"></script>
-    <script>
-        AOS.init();
 
+    <script src="content/js/script.js" type="text/javascript"></script>
+    <script src="content/js/range.js" type="text/javascript"></script>
 
-        $(".carousel-fotos").slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true,
-            responsive: [{
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1
-                }
-            }, {
-                breakpoint: 580,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }]
-        });
-
-        $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 100) { //QUANDO O SCROLL PASSAR DOS 100px DO TOPO
-                $(".navbar").removeClass("large").addClass("small"); //TROCA P CLASSE MENOR
-            } else {
-                $(".navbar").removeClass("small").addClass("large"); //VOLTA P MENU GRANDE ORIGINAL
-            }
-        });
-
-        $(".menu-icon").click(function() {
-            $(".nav").toggleClass("ativo");
-        });
-
-
-        $('.carousel-fotos').lightGallery({
-            selector: '.slick-slide:not(.slick-cloned) .lightgallery',
-        });
-
-        $(document).ready(function() {
-            $('#lightgallerydois').lightGallery();
-            $('#lightgallery3').lightGallery();
-        });
-
-        function rangeSlide(value) {
-            document.getElementById('rangeValue').innerHTML = value;
-        }
-    </script>
 
 </body>
 

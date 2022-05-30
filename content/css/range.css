@@ -1,0 +1,53 @@
+ .range__slider [type="range"] {
+     width: 100%;
+     -webkit-appearance: none;
+     height: 3px;
+     border-radius: 6px;
+     background: #f1f1f1;
+     outline: none;
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .range__slider [type="range"]::-webkit-slider-thumb {
+     -webkit-appearance: none;
+     appearance: none;
+     width: 21px;
+     height: 30px;
+     border-radius: 0;
+     background: url("../img/icon-range.png") no-repeat left center;
+     background-size: 21px;
+     cursor: pointer;
+ }
+ 
+ .range__slider [type="range"]::-moz-range-thumb {
+     width: 21px;
+     height: 30px;
+     border-radius: 0;
+     background: url("../img/icon-range.png") no-repeat left center;
+     background-size: 21px;
+     cursor: pointer;
+ }
+ 
+ .range__slider input::-moz-focus-inner,
+ .range__slider input::-moz-focus-outer {
+     border: 0;
+ }
+ 
+ .range__value span {
+     font-size: 20px;
+     color: #ffffff;
+     font-weight: 500;
+     margin-bottom: 18px;
+     display: block;
+ }
+ 
+ .range__value h5 {
+     font-size: 12px;
+     margin: 0;
+     color: #ffffff;
+ }
+ 
+ .range .slider {
+     margin-bottom: 50px;
+ }

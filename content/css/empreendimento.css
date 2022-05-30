@@ -455,6 +455,7 @@ section.banner-interna {
     letter-spacing: 3px;
     margin-bottom: 65px;
     position: relative;
+    margin-top: 0;
 }
 
 .bg-valores-financiamento h2 b {
@@ -498,6 +499,7 @@ section.banner-interna {
 .select-valores-financiamento h5 {
     font-size: 10px;
     color: #fff;
+    margin-left: 27px;
 }
 
 .select-valores-financiamento {
@@ -509,18 +511,6 @@ section.banner-interna {
     display: block;
     width: 100%;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .select-box {
-        width: 70%;
-    }
-}
-
-@media (min-width: 992px) {
-    .select-box {
-        width: 50%;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -540,9 +530,9 @@ section.banner-interna {
     opacity: 1;
     -webkit-animation-name: none;
     animation-name: none;
-    margin-top: -31px;
+    margin-top: -27px;
     padding-top: 31px;
-    /* background: #252525; */
+    background: #252525;
 }
 
 .select-box__current:focus+.select-box__list .select-box__option {
@@ -561,6 +551,7 @@ section.banner-interna {
     width: 29px;
     opacity: 0.3;
     transition: 0.2s ease;
+    z-index: 2;
 }
 
 .select-box__value {
@@ -627,6 +618,7 @@ section.banner-interna {
     margin-left: 125px;
     margin-bottom: 0px;
     height: 64px;
+    margin-bottom: 3px;
 }
 
 .select-box__option:hover,
@@ -663,13 +655,13 @@ section.banner-interna {
     margin: 40px 0;
 }
 
-.slide-range p {
+.slide-range h5 {
     font-size: 12px;
     margin: 0;
     color: #ffffff;
 }
 
-.slide-range span {
+.slide-range p {
     font-size: 20px;
     color: #ffffff;
     font-weight: 500;
@@ -687,30 +679,9 @@ section.banner-interna {
     text-decoration: underline;
 }
 
-.range {
-    width: 400px;
-    height: 3px;
-    -webkit-appearance: none;
-    background: #5f5f5e;
-    outline: none;
-    overflow: hidden;
-}
-
-.range::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    box-shadow: -407px 0 0 400px #f47332;
-    width: 0;
-    height: 0;
-    border-top: 30px solid transparent;
-    border-bottom: 30px solid transparent;
-    border-left: 30px solid #f47332;
-}
-
 .btn-select-valores-financiamento {
     padding: 0;
+    height: 110px;
 }
 
 .btn-select-valores-financiamento li {
@@ -763,6 +734,14 @@ section.banner-interna {
 
 .icon-calculo-parcelas {
     background-image: url("../img/icon-calculo-parcelas.png");
+}
+
+.box-valores-financiamento-left {
+    padding: 0 50px 0 0;
+}
+
+.box-valores-financiamento-right {
+    padding: 0 0 0 50px;
 }
 
 .info-select-valores-financiamento {
@@ -977,6 +956,7 @@ section.banner-interna {
     font-size: 18px;
     color: #5f5f5e;
     text-align: right;
+    height: 45px;
 }
 
 .bg-informacoes-tecnicas-imovel ul li span {
@@ -985,11 +965,12 @@ section.banner-interna {
     color: #5f5f5e;
     text-align: left;
     display: block;
+    position: absolute;
 }
 
 .bg-informacoes-tecnicas-imovel ul li span:after {
     content: "";
-    width: 7%;
+    width: 60px;
     height: 2px;
     background: #f47332;
     display: block;
